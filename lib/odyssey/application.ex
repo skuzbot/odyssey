@@ -10,7 +10,7 @@ defmodule Odyssey.Application do
     children = [
       # Starts a worker by calling: Odyssey.Worker.start_link(arg)
       # {Odyssey.Worker, arg}
-      {Subreddits.Repo, []}
+      Odyssey.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

@@ -2,11 +2,13 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :odyssey, Subreddits.Repo,
+config :odyssey, Odyssey.Repo,
   database: "odyssey_repo",
-  username: "user",
-  password: "pass",
+  username: "postgres",
+  password: "",
   hostname: "localhost"
+
+config :odyssey, ecto_repos: [Odyssey.Repo]
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
